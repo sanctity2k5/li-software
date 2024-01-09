@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Define Lato font */
+@font-face {
+  font-family: 'Lato';
+  src: url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+}
+
+/* Define Open Sans font */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap');
+}
+
+/* Define Poppins font */
+@font-face {
+  font-family: 'Poppins';
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap');
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,6 +35,11 @@
 }
 
 body {
+  font-family: 'Lato', 'Open Sans', 'Poppins', sans-serif; /* Choose your preferred font */
+}
+
+/* Uncomment and use this if needed
+body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -25,3 +48,4 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+*/

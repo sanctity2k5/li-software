@@ -1,0 +1,61 @@
+.mainContainer {
+    @apply flex w-full lg:justify-between items-center px-4 py-4 text-white font-sans font-semibold;
+}
+
+.navbar {
+    @apply hidden lg:flex justify-between gap-12 items-center;
+}
+
+.navList {
+    @apply lg:flex gap-6;
+}
+
+.navItems {
+    position: relative;
+    /* other styles for navItems */
+  }
+  
+  .navItems::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjust this as needed */
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background-color: currentColor; /* Color of the underline */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .navItems:hover::after {
+    width: 100%;
+  }  
+
+.buttons {
+    @apply hidden lg:flex gap-12 items-center;
+}
+
+
+/* Mobile Nav styles */
+.mobileNav {
+    @apply w-full flex justify-between lg:hidden;
+}
+
+.mobileNavList {
+    @apply mt-8;
+}
+
+.mobileButtons {
+    @apply flex flex-col items-start gap-2 mt-6;
+}
+
+.login {
+    @apply hover:text-[18px]
+}
+
+.register {
+    @apply w-[120px] h-[38px] bg-button-secondary rounded-[20px] text-center text-[16px] font-sans hover:bg-[#C5E1A5];
+}
+
+.settingsIcon {
+    @apply w-[20px] h-[20px] cursor-pointer hover:w-[24px] hover:h-[24px];
+}

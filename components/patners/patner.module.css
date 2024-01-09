@@ -1,0 +1,27 @@
+.patnersLogo {
+    @apply w-full flex justify-around gap-6 mt-28 lg:mt-40 px-6;
+}
+
+.logos {
+    @apply w-8 h-8 lg:w-[64px] lg:h-[64px] lg:mr-8 flex-shrink-0;
+}
+
+.usageContainer {
+    @apply flex justify-center gap-5 lg:gap-0 lg:justify-between mt-10 lg:mt-20 lg:px-24;
+}
+
+.userContainerTitle {
+    @apply text-primary text-xl lg:text-4xl font-bold leading-4 lg:-ml-6;
+}
+
+.usageContainerSubtitle {
+    @apply flex items-center gap-2 text-black text-opacity-50 text-xs lg:text-xl font-normal mt-2 lg:-ml-8;
+}
+
+.icons {
+    @apply w-3 h-3 lg:w-[20px] lg:h-[20px];
+}
+
+.hr{
+    @apply border-2 border-[#E1BEE7] w-0 h-10 lg:h-20
+}
